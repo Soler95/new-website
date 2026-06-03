@@ -134,7 +134,7 @@ header.stuck {
   background:
     linear-gradient(to bottom, transparent 25%, rgba(4,4,4,.6) 60%, rgba(4,4,4,.97) 100%),
     linear-gradient(100deg, rgba(4,4,4,.5) 0%, transparent 60%),
-    url('https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?w=1800&q=80') center/cover no-repeat;
+    url('florianpeelman.jpg.jpg') center/cover no-repeat;
   transform:scale(1.06);
   transition:transform 10s var(--ease);
 }
