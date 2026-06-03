@@ -149,3 +149,42 @@ display:none;
 }
 
 }
+/* ===== FOOTER ===== */
+
+footer{
+border-top:1px solid rgba(255,255,255,.1);
+padding:50px 20px;
+text-align:center;
+margin-top:80px;
+}
+
+.footer-content{
+max-width:1200px;
+margin:auto;
+}
+
+.footer-content p{
+margin:8px 0;
+opacity:.8;
+}
+
+.footer-content a{
+color:white;
+text-decoration:none;
+opacity:.8;
+transition:.3s;
+}
+
+.footer-content a:hover{
+opacity:1;
+}
+
+.footer-social{
+margin-top:15px;
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+font-size:14px;
+letter-spacing:1px;
+}
