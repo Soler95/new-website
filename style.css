@@ -273,39 +273,36 @@ font-family:inherit;
 
 footer{
 width:100%;
+padding:60px 20px;
 border-top:1px solid rgba(255,255,255,.1);
-padding:50px 20px;
-margin-top:80px;
+text-align:center;
+display:flex;
+justify-content:center;
+align-items:center;
 }
 
 .footer-content{
+width:100%;
 max-width:1200px;
-margin:auto;
+margin:0 auto;
 text-align:center;
 }
 
-.footer-content p{
-margin:8px 0;
-font-size:15px;
-opacity:.8;
+.footer-content div{
+margin:10px 0;
 }
 
 .footer-content a{
 color:white;
 text-decoration:none;
-opacity:.8;
-transition:.3s;
-}
-
-.footer-content a:hover{
-opacity:1;
+opacity:.85;
 }
 
 .footer-social{
 display:flex;
 justify-content:center;
-gap:25px;
-margin-top:15px;
+align-items:center;
+gap:20px;
 flex-wrap:wrap;
 }
 
