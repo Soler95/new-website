@@ -502,3 +502,43 @@ footer {
     z-index:1200;
   }
 }
+.mouse{
+  width:24px;
+  height:40px;
+  border:1px solid rgba(255,255,255,.35);
+  border-radius:20px;
+  position:relative;
+}
+
+.wheel{
+  width:3px;
+  height:8px;
+  border-radius:10px;
+  background:var(--accent);
+
+  position:absolute;
+  top:8px;
+  left:50%;
+
+  transform:translateX(-50%);
+
+  animation:wheelScroll 1.8s infinite;
+}
+
+@keyframes wheelScroll{
+
+  0%{
+    opacity:0;
+    top:8px;
+  }
+
+  30%{
+    opacity:1;
+  }
+
+  100%{
+    opacity:0;
+    top:22px;
+  }
+
+}
