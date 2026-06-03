@@ -4,71 +4,243 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Florian Peelman</title>
-<link rel="stylesheet" href="style.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html,body{
+height:100%;
+font-family:Garamond, Georgia, serif;
+background:#000;
+color:white;
+}
+
+/* HEADER */
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:30px 50px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+}
+
+.logo{
+font-size:22px;
+letter-spacing:3px;
+}
+
+.right{
+display:flex;
+align-items:center;
+gap:18px;
+}
+
+.social{
+color:white;
+text-decoration:none;
+font-size:18px;
+opacity:.8;
+transition:.3s;
+}
+
+.social:hover{
+opacity:1;
+}
+
+.menu{
+display:flex;
+gap:25px;
+margin-left:20px;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+font-size:13px;
+letter-spacing:2px;
+text-transform:uppercase;
+opacity:.85;
+}
+
+.menu a:hover{
+opacity:1;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+background:
+linear-gradient(
+rgba(0,0,0,.45),
+rgba(0,0,0,.65)
+),
+url("images/home.jpg");
+
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-content{
+max-width:900px;
+}
+
+.hero h1{
+font-size:90px;
+font-weight:400;
+letter-spacing:8px;
+margin-bottom:20px;
+}
+
+.hero h2{
+font-size:20px;
+letter-spacing:6px;
+font-weight:300;
+text-transform:uppercase;
+opacity:.85;
+margin-bottom:35px;
+}
+
+.hero p{
+font-size:19px;
+line-height:1.8;
+max-width:700px;
+margin:auto;
+opacity:.9;
+}
+
+.buttons{
+margin-top:40px;
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.button{
+padding:14px 28px;
+border:1px solid white;
+color:white;
+text-decoration:none;
+letter-spacing:2px;
+transition:.3s;
+}
+
+.button:hover{
+background:white;
+color:black;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+header{
+padding:20px;
+flex-direction:column;
+gap:15px;
+}
+
+.menu{
+gap:12px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero h1{
+font-size:42px;
+letter-spacing:3px;
+}
+
+.hero h2{
+font-size:14px;
+letter-spacing:3px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+}
+
+</style>
 </head>
 
 <body>
 
 <header>
-  <div class="logo">Florian Peelman</div>
 
-  <nav>
-    <a href="bio.html">Biography</a>
-    <a href="calendar.html">Calendar</a>
-    <a href="media.html">Media</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+<div class="logo">
+Florian Peelman
+</div>
+
+<div class="right">
+
+<a class="social" href="https://instagram.com/TUCUENTA" target="_blank">◎</a>
+
+<a class="social" href="https://facebook.com/TUCUENTA" target="_blank">◉</a>
+
+<a class="social" href="https://youtube.com/TUCANAL" target="_blank">▶</a>
+
+<nav class="menu">
+<a href="bio.html">Biography</a>
+<a href="calendar.html">Calendar</a>
+<a href="media.html">Media</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</div>
+
 </header>
 
 <section class="hero">
-  <div class="overlay"></div>
 
-  <div class="hero-content">
-    <h1>Florian Peelman</h1>
-    <h2>Viola</h2>
+<div class="hero-content">
 
-    <p>
-      Internationally active violist performing as soloist,
-      chamber musician and orchestral leader.
-    </p>
+<h1>Florian Peelman</h1>
 
-    <a href="bio.html" class="button">
-      Read Biography
-    </a>
-  </div>
-</section>
+<h2>
+Violist · Chamber Musician · Professor
+</h2>
 
-<section class="home-calendar">
+<p>
+Internationally acclaimed violist performing with leading orchestras,
+festivals and chamber music ensembles throughout Europe.
+</p>
 
-<h3>Upcoming Events</h3>
+<div class="buttons">
 
-<div class="event">
-  <div>
-    <strong>12 March 2026</strong><br>
-    Berlin Philharmonie
-  </div>
-
-  <a href="#">Tickets</a>
-</div>
-
-<div class="event">
-  <div>
-    <strong>18 April 2026</strong><br>
-    Madrid Concert Hall
-  </div>
-
-  <a href="#">Tickets</a>
-</div>
-
-<a href="calendar.html" class="button">
-View Full Calendar
+<a href="bio.html" class="button">
+Biography
 </a>
 
+<a href="calendar.html" class="button">
+Upcoming Events
+</a>
+
+</div>
+
+</div>
+
 </section>
 
-<footer>
-  © 2026 Florian Peelman
-</footer>
+</body>
+</html>
 
 </body>
 </html>
