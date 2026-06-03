@@ -5,204 +5,36 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Florian Peelman</title>
 
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-html,body{
-height:100%;
-font-family:Garamond, Georgia, serif;
-background:#000;
-color:white;
-}
-
-/* HEADER */
-
-header{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-padding:30px 50px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-z-index:1000;
-}
-
-.logo{
-font-size:22px;
-letter-spacing:3px;
-}
-
-.right{
-display:flex;
-align-items:center;
-gap:18px;
-}
-
-.social{
-color:white;
-text-decoration:none;
-font-size:18px;
-opacity:.8;
-transition:.3s;
-}
-
-.social:hover{
-opacity:1;
-}
-
-.menu{
-display:flex;
-gap:25px;
-margin-left:20px;
-}
-
-.menu a{
-color:white;
-text-decoration:none;
-font-size:13px;
-letter-spacing:2px;
-text-transform:uppercase;
-opacity:.85;
-}
-
-.menu a:hover{
-opacity:1;
-}
-
-/* HERO */
-
-.hero{
-height:100vh;
-background:
-linear-gradient(
-rgba(0,0,0,.45),
-rgba(0,0,0,.65)
-),
-url("images/home.jpg");
-
-background-size:cover;
-background-position:center;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-}
-
-.hero-content{
-max-width:900px;
-}
-
-.hero h1{
-font-size:90px;
-font-weight:400;
-letter-spacing:8px;
-margin-bottom:20px;
-}
-
-.hero h2{
-font-size:20px;
-letter-spacing:6px;
-font-weight:300;
-text-transform:uppercase;
-opacity:.85;
-margin-bottom:35px;
-}
-
-.hero p{
-font-size:19px;
-line-height:1.8;
-max-width:700px;
-margin:auto;
-opacity:.9;
-}
-
-.buttons{
-margin-top:40px;
-display:flex;
-justify-content:center;
-gap:15px;
-flex-wrap:wrap;
-}
-
-.button{
-padding:14px 28px;
-border:1px solid white;
-color:white;
-text-decoration:none;
-letter-spacing:2px;
-transition:.3s;
-}
-
-.button:hover{
-background:white;
-color:black;
-}
-
-/* MOBILE */
-
-@media(max-width:768px){
-
-header{
-padding:20px;
-flex-direction:column;
-gap:15px;
-}
-
-.menu{
-gap:12px;
-flex-wrap:wrap;
-justify-content:center;
-}
-
-.hero h1{
-font-size:42px;
-letter-spacing:3px;
-}
-
-.hero h2{
-font-size:14px;
-letter-spacing:3px;
-}
-
-.hero p{
-font-size:16px;
-}
-
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
 
-<div class="logo">
-Florian Peelman
-</div>
-
-<div class="right">
-
-<a class="social" href="https://instagram.com/TUCUENTA" target="_blank">◎</a>
-
-<a class="social" href="https://facebook.com/TUCUENTA" target="_blank">◉</a>
-
-<a class="social" href="https://youtube.com/TUCANAL" target="_blank">▶</a>
+<div class="logo">Florian Peelman</div>
 
 <nav class="menu">
+<a href="index.html">Home</a>
 <a href="bio.html">Biography</a>
 <a href="calendar.html">Calendar</a>
 <a href="media.html">Media</a>
 <a href="contact.html">Contact</a>
 </nav>
+
+<div class="social">
+
+<a href="https://instagram.com/" target="_blank">
+<svg viewBox="0 0 24 24"><path fill="white" d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H7c-1.65 0-3-1.35-3-3V7c0-1.65 1.35-3 3-3h10zm-5 3.5A4.5 4.5 0 1 0 16.5 12 4.5 4.5 0 0 0 12 7.5zm0 2A2.5 2.5 0 1 1 9.5 12 2.5 2.5 0 0 1 12 9.5z"/></svg>
+</a>
+
+<a href="https://facebook.com/" target="_blank">
+<svg viewBox="0 0 24 24"><path fill="white" d="M22 12a10 10 0 1 0-11.56 9.87v-6.99H8.9V12h1.54V9.8c0-1.52.9-2.36 2.28-2.36.66 0 1.36.12 1.36.12v1.5h-.77c-.76 0-1 .47-1 1v1.94h1.7l-.27 2.88h-1.43v6.99A10 10 0 0 0 22 12z"/></svg>
+</a>
+
+<a href="https://youtube.com/" target="_blank">
+<svg viewBox="0 0 24 24"><path fill="white" d="M10 15l5.19-3L10 9v6zm12-3c0-5.52-4.48-10-10-10S2 6.48 2 12s4.48 10 10 10 10-4.48 10-10z"/></svg>
+</a>
 
 </div>
 
@@ -210,57 +42,21 @@ Florian Peelman
 
 <section class="hero">
 
-<div class="hero-content">
-
+<div>
 <h1>Florian Peelman</h1>
-
-<h2>
-Violist · Chamber Musician · Professor
-</h2>
-
-<p>
-Internationally acclaimed violist performing with leading orchestras,
-festivals and chamber music ensembles throughout Europe.
-</p>
+<p>Violist · Chamber Musician · Professor</p>
 
 <div class="buttons">
-
-<a href="bio.html" class="button">
-Biography
-</a>
-
-<a href="calendar.html" class="button">
-Upcoming Events
-</a>
-
+<a href="bio.html" class="btn">Biography</a>
+<a href="calendar.html" class="btn">Concerts</a>
 </div>
-
 </div>
 
 </section>
 
 <footer>
-  <div class="footer-content">
-
-    <p>© 2026 Florian Peelman</p>
-
-    <p>
-      <a href="mailto:florianpeelman@gmail.com">
-        florianpeelman@gmail.com
-      </a>
-    </p>
-
-    <div class="footer-social">
-      <a href="https://instagram.com/TUCUENTA">Instagram</a>
-      <a href="https://facebook.com/TUCUENTA">Facebook</a>
-      <a href="https://youtube.com/TUCANAL">YouTube</a>
-    </div>
-
-  </div>
+© 2026 Florian Peelman · <a href="mailto:florianpeelman@gmail.com">Contact</a>
 </footer>
-  
-</body>
-</html>
 
 </body>
 </html>
