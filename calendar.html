@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Calendar</title>
+
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -18,27 +20,37 @@
 <a href="media.html">Media</a>
 <a href="contact.html">Contact</a>
 </nav>
-
-<div class="social">SOCIAL ICONS</div>
 </header>
 
 <section class="page">
-
 <h1>Calendar</h1>
 
-<div class="event">
-<div>
-<strong>04 June 2026</strong><br>
-Teatro Manzoni, Utopia
-</div>
-<a class="btn" href="#">Read More</a>
-</div>
-
+<div id="events-full"></div>
 </section>
 
 <footer>
 © 2026 Florian Peelman · <a href="mailto:florianpeelman@gmail.com">Contact</a>
 </footer>
+
+<script>
+fetch("events.json")
+.then(res => res.json())
+.then(data => {
+  const container = document.getElementById("events-full");
+
+  data.forEach(ev => {
+    container.innerHTML += `
+      <div class="event">
+        <div>
+          <strong>${ev.date}</strong><br>
+          ${ev.place}
+        </div>
+        <a class="ticket" href="${ev.ticket}" target="_blank">Tickets</a>
+      </div>
+    `;
+  });
+});
+</script>
 
 </body>
 </html>
