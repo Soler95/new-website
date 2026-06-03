@@ -1,22 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Josefin+Sans:wght@200;300;400&display=swap');
 
-/* ── VARIABLES ── */
+/* ─────────────────────────────
+   VARIABLES
+──────────────────────────── */
 :root {
-  --bg:      #040404;
-  --surface: #0c0c0c;
-  --accent:  #c8a96e;
-  --accent2: #8c6d3f;
-  --text:    #f0ece4;
-  --border:  rgba(200,169,110,.14);
-  --ease:    cubic-bezier(.16,1,.3,1);
-  --wipe:    cubic-bezier(.65,0,.35,1);
+  --bg:#040404;
+  --surface:#0c0c0c;
+  --accent:#c8a96e;
+  --accent2:#8c6d3f;
+  --text:#f0ece4;
+  --border:rgba(200,169,110,.14);
+  --ease:cubic-bezier(.16,1,.3,1);
+  --wipe:cubic-bezier(.65,0,.35,1);
 }
 
-/* ── RESET ── */
-*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
-html { scroll-behavior:smooth; }
+/* ─────────────────────────────
+   RESET
+──────────────────────────── */
+*,*::before,*::after{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
-body {
+html{
+  scroll-behavior:smooth;
+}
+
+body{
   font-family:'Josefin Sans',sans-serif;
   background:var(--bg);
   color:var(--text);
@@ -25,11 +36,13 @@ body {
   cursor:none;
 }
 
-a { text-decoration:none; color:inherit; }
-img { display:block; max-width:100%; }
+a{ text-decoration:none; color:inherit; }
+img{ max-width:100%; display:block; }
 
-/* ── HEADER ── */
-header {
+/* ─────────────────────────────
+   HEADER
+──────────────────────────── */
+header{
   position:fixed;
   top:0;
   left:0;
@@ -41,44 +54,54 @@ header {
   z-index:1000;
 }
 
-.logo {
+.logo{
   font-family:'Cormorant Garamond',serif;
   font-size:22px;
   letter-spacing:6px;
-  font-weight:300;
 }
 
-/* ── MENU DESKTOP ── */
-.menu {
+/* ─────────────────────────────
+   MENU DESKTOP
+──────────────────────────── */
+.menu{
   display:flex;
   gap:34px;
 }
 
-.menu a {
+.menu a{
   font-size:10px;
   letter-spacing:3px;
   text-transform:uppercase;
   opacity:.5;
-  transition:opacity .3s;
+  transition:.3s;
 }
 
-.menu a:hover {
+.menu a:hover{
   opacity:1;
 }
 
-/* ── SOCIAL DESKTOP ── */
-.social {
+/* ─────────────────────────────
+   SOCIAL
+──────────────────────────── */
+.social{
   display:flex;
   gap:20px;
   align-items:center;
 }
 
-.social a {
+.social a{
   opacity:.45;
+  transition:.3s;
 }
 
-/* ── HERO ── */
-.hero {
+.social a:hover{
+  opacity:1;
+}
+
+/* ─────────────────────────────
+   HERO
+──────────────────────────── */
+.hero{
   height:100vh;
   min-height:640px;
   display:flex;
@@ -89,81 +112,74 @@ header {
   overflow:hidden;
 }
 
-.hero-bg {
+.hero-bg{
   position:absolute;
   inset:0;
   background:
     linear-gradient(to bottom, transparent 25%, rgba(4,4,4,.6) 60%, rgba(4,4,4,.97) 100%),
-    linear-gradient(100deg, rgba(4,4,4,.5) 0%, transparent 60%),
     url('florianpeelman.jpg.jpg') center 30%/cover no-repeat;
   transform:scale(1.06);
 }
 
-/* ── BUTTONS ── */
-.btn {
-  display:inline-flex;
-  padding:15px 34px;
-  font-size:10px;
-  letter-spacing:3px;
-  text-transform:uppercase;
-}
-
-/* ── MOBILE MENU BUTTON ── */
-.menu-toggle {
+/* ─────────────────────────────
+   BOTÓN MENU
+──────────────────────────── */
+.menu-toggle{
   display:none;
-  font-size:28px;
+  font-size:30px;
   color:white;
   cursor:pointer;
   z-index:3001;
 }
 
 /* ─────────────────────────────
-   MOBILE FIX COMPLETO
+   MOBILE FIX REAL
 ──────────────────────────── */
-@media (max-width:768px) {
+@media (max-width:768px){
 
-  body {
+  body{
     cursor:auto;
   }
 
-  header {
+  header{
     padding:18px 22px;
   }
 
   /* botón hamburguesa */
-  .menu-toggle {
+  .menu-toggle{
     display:block;
-    position:relative;
   }
 
-  /* OCULTAR redes sociales (IMPORTANTE) */
-  .social {
+  /* ocultar redes sociales */
+  .social{
     display:none;
   }
 
-  /* MENU MOBILE */
-  .menu {
+  /* menú móvil */
+  .menu{
     position:fixed;
     top:0;
     right:-100%;
     width:75%;
     height:100vh;
     background:#000;
+    display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:flex-end;
     padding:60px 40px;
     gap:28px;
-    transition:0.35s ease;
+    transition:right .35s ease;
     z-index:2000;
   }
 
-  /* MENU ABIERTO */
-  .menu.active {
+  /* menú activo */
+  .menu.active{
     right:0;
   }
 
-  .menu a {
+  .menu a{
     font-size:18px;
+    letter-spacing:3px;
   }
 }
