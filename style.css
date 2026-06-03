@@ -320,6 +320,128 @@ header {
   height:100%;
   border:0;
 }
+/* ───────────────── CONTACT ───────────────── */
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:420px 1fr;
+  gap:120px;
+  align-items:start;
+}
+
+/* columna izquierda */
+
+.contact-copy{
+  position:sticky;
+  top:140px;
+}
+
+.contact-copy h2{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(40px,4vw,72px);
+  font-weight:300;
+  line-height:.95;
+  letter-spacing:-1px;
+  margin-bottom:28px;
+}
+
+.contact-copy h2 em{
+  color:var(--accent);
+  font-style:italic;
+}
+
+.contact-intro{
+  font-size:15px;
+  line-height:1.9;
+  opacity:.55;
+  margin-bottom:50px;
+  max-width:340px;
+}
+
+/* contactos */
+
+.contact-item{
+  padding:22px 0;
+  border-bottom:1px solid rgba(255,255,255,.06);
+}
+
+.contact-item .role{
+  color:var(--accent);
+  font-size:10px;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  margin-bottom:10px;
+}
+
+.contact-item a{
+  font-size:18px;
+  opacity:.9;
+  transition:.35s;
+}
+
+.contact-item a:hover{
+  color:var(--accent);
+}
+
+/* formulario */
+
+.contact-form{
+  padding:60px;
+  border:1px solid rgba(200,169,110,.12);
+  background:
+  linear-gradient(
+  135deg,
+  rgba(255,255,255,.02),
+  rgba(255,255,255,.01)
+  );
+  backdrop-filter:blur(16px);
+}
+
+.form-row{
+  margin-bottom:42px;
+}
+
+.form-row label{
+  display:block;
+  margin-bottom:14px;
+  color:var(--accent);
+  font-size:10px;
+  letter-spacing:4px;
+  text-transform:uppercase;
+}
+
+.form-row input,
+.form-row textarea{
+  width:100%;
+  background:none;
+  border:none;
+  border-bottom:1px solid rgba(255,255,255,.12);
+
+  padding:18px 0;
+
+  font-size:16px;
+  color:white;
+
+  transition:.35s;
+}
+
+.form-row input:focus,
+.form-row textarea:focus{
+  border-bottom-color:var(--accent);
+}
+
+.form-row textarea{
+  min-height:140px;
+}
+
+/* botón */
+
+.contact-form .btn{
+  width:100%;
+  justify-content:center;
+  padding:18px;
+  margin-top:20px;
+}
 
 /* ── FOOTER ── */
 footer {
