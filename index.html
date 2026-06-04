@@ -192,18 +192,93 @@
     </div>
   </div>
  
-  <!-- ── FOOTER ── -->
-  <footer>
-    <p class="footer-copy">© 2026 Florian Peelman. All right reserved.</p>
-    <div class="footer-logo">FLORIAN PEELMAN</div>
-    <nav class="footer-nav">
-      <a href="#">Imprint</a>
-      <a href="#">rights</a>
-      <a href="#">Instagram</a>
-    </nav>
-  </footer>
- 
-  <script>
+/* ══════════════════
+   FOOTER
+══════════════════ */
+.footer {
+  background: var(--bg);
+  border-top: 1px solid var(--gold-border);
+  padding: 64px 48px 36px;
+}
+
+.footer-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-bottom: 48px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid var(--gold-border);
+}
+
+.footer-logo {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.28em;
+  color: var(--cream);
+  margin-bottom: 7px;
+}
+
+.footer-role {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+}
+
+.footer-quote {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 17px;
+  font-weight: 300;
+  color: var(--muted);
+}
+
+.footer-right {
+  display: flex;
+  gap: 28px;
+}
+
+.footer-link {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.3s;
+  position: relative;
+}
+
+.footer-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; left: 0;
+  width: 0; height: 1px;
+  background: var(--gold);
+  transition: width 0.3s var(--ease);
+}
+
+.footer-link:hover { color: var(--gold-light); }
+.footer-link:hover::after { width: 100%; }
+
+.footer-bottom {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  text-align: center;
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+  
     /* ── CURSOR ── */
     const cur  = document.getElementById('cur');
     const ring = document.getElementById('cur-ring');
