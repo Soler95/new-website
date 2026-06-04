@@ -1,338 +1,361 @@
 <!DOCTYPE html>
-<html lang="es">
+
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Artista — Portfolio</title>
+
+  <title>Florian Peelman | Violist</title>
+
+  <meta name="description" content="Florian Peelman – Violist based in Berlin. Orchestra, Chamber Music and Teaching.">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Josefin+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Josefin+Sans:wght@200;300;400;500&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
- 
-  <!-- CURSOR -->
+
+  <!-- Cursor -->
+
   <div id="cur"></div>
   <div id="cur-ring"></div>
-  <!-- GRAIN -->
+
+  <!-- Grain -->
+
   <div id="grain"></div>
- 
-  <!-- PROGRESS BAR -->
+
+  <!-- Progress Bar -->
+
   <div id="prog"></div>
- 
-  <!-- ── HEADER ── -->
+
+  <!-- Header -->
+
   <header id="hdr">
-    <a href="index.html" class="logo">FLORIAN PEELMAN</a>
-    <nav class="menu">
-      <a href="bio.html">Bio</a>
-      <a href="calendar.html">Dates</a>
-      <a href="media.html">Media</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <div class="social">
-      <!-- Instagram -->
-      <a href="#" aria-label="Instagram">
-        <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.3" fill="currentColor" stroke="none"/></svg>
-      </a>
-      <!-- Spotify -->
-      <a href="#" aria-label="Spotify">
-        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14.5c2.5-1 5.5-.8 7.5.5M7.5 11.5c3-1.2 6.5-1 9 .8M8.5 8.5c3.5-1.5 7.5-1 10 1.2" stroke-linecap="round"/></svg>
-      </a>
-      <!-- YouTube -->
-      <a href="#" aria-label="YouTube">
-        <svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="4"/><polygon points="10,9 16,12 10,15" fill="currentColor" stroke="none"/></svg>
-      </a>
-    </div>
-    <div class="menu-toggle" id="menuToggle">☰</div>
-  </header>
- 
-  <!-- ── HERO ── -->
-  <section class="hero">
-    <div class="hero-bg" id="hbg"></div>
- 
-    <p class="hero-tag" id="htag">Violist</p>
-    <h1 id="htitle">Florian<br><em>Peelman</em></h1>
-    <p class="hero-sub" id="hsub">Orchestra · Chamber Music · Teacher · Berlin</p>
- 
-    <div class="buttons" id="hbtns">
-<a href="contact.html" class="btn btn-ghost">
-  <div class="fill"></div>
-  <span class="label">Get in touch →</span>
+
+```
+<a href="index.html" class="logo">
+  FLORIAN PEELMAN
 </a>
-      <a href="calendar.html" class="btn btn-ghost">
-        <div class="fill"></div>
-        <span class="label">Calendar <span class="btn-arrow">→</span></span>
-      </a>
-    </div>
- 
+
+<nav class="menu">
+
+  <a href="bio.html">Bio</a>
+
+  <a href="calendar.html">Calendar</a>
+
+  <a href="media.html">Media</a>
+
+  <a href="contact.html">Contact</a>
+
+</nav>
+
+<div class="social">
+
+  <a href="#" aria-label="Instagram">
+    <svg viewBox="0 0 24 24">
+      <rect x="2" y="2" width="20" height="20" rx="5"></rect>
+      <circle cx="12" cy="12" r="5"></circle>
+      <circle cx="17.5" cy="6.5" r="1.3" fill="currentColor" stroke="none"></circle>
+    </svg>
+  </a>
+
+  <a href="#" aria-label="Spotify">
+    <svg viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10"></circle>
+      <path d="M8 14.5c2.5-1 5.5-.8 7.5.5M7.5 11.5c3-1.2 6.5-1 9 .8M8.5 8.5c3.5-1.5 7.5-1 10 1.2" stroke-linecap="round"></path>
+    </svg>
+  </a>
+
+  <a href="#" aria-label="YouTube">
+    <svg viewBox="0 0 24 24">
+      <rect x="2" y="5" width="20" height="14" rx="4"></rect>
+      <polygon points="10,9 16,12 10,15" fill="currentColor" stroke="none"></polygon>
+    </svg>
+  </a>
+
+</div>
+
+<button class="menu-toggle" id="menuToggle" aria-label="Open Menu">
+  ☰
+</button>
+```
+
+  </header>
+
+  <!-- Hero -->
+
+  <section class="hero">
+
+```
+<div class="hero-bg" id="hbg"></div>
+
+<p class="hero-tag" id="htag">
+  Violist
+</p>
+
+<h1 id="htitle">
+  Florian
+  <br>
+  <em>Peelman</em>
+</h1>
+
+<p class="hero-sub" id="hsub">
+  Orchestra · Chamber Music · Teaching · Berlin
+</p>
+
+<div class="buttons" id="hbtns">
+
+  <a href="contact.html" class="btn btn-ghost">
+    <span class="label">Get in Touch →</span>
+  </a>
+
+  <a href="calendar.html" class="btn btn-ghost">
+    <span class="label">Calendar →</span>
+  </a>
+
+</div>
+
 <div class="scroll-cue">
+
   <span>SCROLL</span>
+
   <div class="mouse">
     <div class="wheel"></div>
   </div>
+
 </div>
+```
+
   </section>
- 
-  <!-- ── EVENTS ── -->
-  <div class="wrap">
-    <div class="section">
-      <div class="eyebrow r">Events</div>
- 
-      <div class="event r r1">
-        <div class="event-date">14<span>ENE</span></div>
-        <div class="event-info">
-          <h3>Sala Apolo</h3>
-          <p>Barcelona, España &nbsp;·&nbsp; Puertas 20:00h</p>
-        </div>
-        <a href="#" class="ticket">
-          <div class="fill"></div>
-          <span class="t-label">Entradas <span class="t-arrow">→</span></span>
-        </a>
-      </div>
- 
-      <div class="event r r2">
-        <div class="event-date">21<span>ENE</span></div>
-        <div class="event-info">
-          <h3>La Riviera</h3>
-          <p>Madrid, España &nbsp;·&nbsp; Puertas 21:00h</p>
-        </div>
-        <a href="#" class="ticket">
-          <div class="fill"></div>
-          <span class="t-label">Entradas <span class="t-arrow">→</span></span>
-        </a>
-      </div>
- 
-      <div class="event r r3">
-        <div class="event-date">03<span>FEB</span></div>
-        <div class="event-info">
-          <h3>Razzmatazz</h3>
-          <p>Barcelona, España &nbsp;·&nbsp; Puertas 22:00h</p>
-        </div>
-        <span class="sold">Agotado</span>
-      </div>
- 
-      <div class="event r r4">
-        <div class="event-date">17<span>FEB</span></div>
-        <div class="event-info">
-          <h3>Teatro Gran Rex</h3>
-          <p>Buenos Aires, Argentina &nbsp;·&nbsp; 20:00h</p>
-        </div>
-        <a href="#" class="ticket">
-          <div class="fill"></div>
-          <span class="t-label">Entradas <span class="t-arrow">→</span></span>
-        </a>
-      </div>
- 
-    </div>
+
+  <!-- Events -->
+
+  <section class="wrap">
+
+```
+<div class="section">
+
+  <div class="eyebrow r">
+    Upcoming Events
   </div>
- 
-  <!-- ── MEDIA ── -->
-  <div class="wrap">
-    <div class="section" style="padding-top:0">
-      <div class="eyebrow r">Media</div>
-      <div class="video r">
- <iframe
-  src="https://www.youtube.com/embed/Y04K9-z7pxk"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen>
-</iframe>
-      </div>
-      <div class="video-meta r">
-        <span>Brahms Scherzo arr. for Viola and Piano</span>
-        <span>2025</span>
-      </div>
+
+  <div class="event r">
+
+    <div class="event-date">
+      14
+      <span>JAN</span>
     </div>
-  </div>
- 
-  <!-- ── CONTACT ── -->
-  <div class="wrap">
-    <div class="section">
-      <div class="eyebrow r">Contact</div>
-      <div class="contact-grid">
- 
-        <div class="contact-copy r">
-          <h2>Management</h2>
-          <div class="contact-item">
-            <div class="role">Management</div>
-            <a href="mailto:florianpeelman@gmail.com">florianpeelman@gmail.com</a>
-          </div>
-          <div class="contact-item">
-            <div class="role">Teaching</div>
-            <a href="mailto:florianpeelman@gmail.com">florianpeelman@gmail.com</a>
-          </div>
-          <div class="contact-item">
-            <div class="role">Booking</div>
-            <a href="mailto:florianpeelman@gmail.com">florianpeelman@gmail.com</a>
-          </div>
-        </div>
- 
-        <div class="r r1">
-          <div class="form-row">
-            <label for="f-name">Name</label>
-            <input id="f-name" type="text" autocomplete="name">
-            <div class="form-bar"></div>
-          </div>
-          <div class="form-row">
-            <label for="f-email">Email</label>
-            <input id="f-email" type="email" autocomplete="email">
-            <div class="form-bar"></div>
-          </div>
-          <div class="form-row">
-            <label for="f-msg">Question?</label>
-            <textarea id="f-msg"></textarea>
-            <div class="form-bar"></div>
-          </div>
-          <button type="button" class="btn btn-ghost" style="margin-top:8px">
-            <div class="fill"></div>
-            <span class="label">Get in touch! <span class="btn-arrow">→</span></span>
-          </button>
-        </div>
- 
-      </div>
+
+    <div class="event-info">
+      <h3>Sala Apolo</h3>
+      <p>Barcelona, Spain · Doors 20:00</p>
     </div>
+
+    <a href="#" class="ticket">
+      Tickets →
+    </a>
+
   </div>
- 
-/* ══════════════════
-   FOOTER
-══════════════════ */
-.footer {
-  background: var(--bg);
-  border-top: 1px solid var(--gold-border);
-  padding: 64px 48px 36px;
-}
 
-.footer-inner {
-  max-width: var(--max-w);
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 40px;
-  padding-bottom: 48px;
-  margin-bottom: 28px;
-  border-bottom: 1px solid var(--gold-border);
-}
+  <div class="event r">
 
-.footer-logo {
-  font-family: var(--font-sans);
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 0.28em;
-  color: var(--cream);
-  margin-bottom: 7px;
-}
+    <div class="event-date">
+      21
+      <span>JAN</span>
+    </div>
 
-.footer-role {
-  font-family: var(--font-sans);
-  font-size: 10px;
-  font-weight: 300;
-  letter-spacing: 0.12em;
-  color: var(--muted);
-}
+    <div class="event-info">
+      <h3>La Riviera</h3>
+      <p>Madrid, Spain · Doors 21:00</p>
+    </div>
 
-.footer-quote {
-  font-family: var(--font-serif);
-  font-style: italic;
-  font-size: 17px;
-  font-weight: 300;
-  color: var(--muted);
-}
+    <a href="#" class="ticket">
+      Tickets →
+    </a>
 
-.footer-right {
-  display: flex;
-  gap: 28px;
-}
+  </div>
 
-.footer-link {
-  font-family: var(--font-sans);
-  font-size: 10px;
-  font-weight: 400;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--muted);
-  text-decoration: none;
-  transition: color 0.3s;
-  position: relative;
-}
+  <div class="event r">
 
-.footer-link::after {
-  content: '';
-  position: absolute;
-  bottom: -2px; left: 0;
-  width: 0; height: 1px;
-  background: var(--gold);
-  transition: width 0.3s var(--ease);
-}
+    <div class="event-date">
+      03
+      <span>FEB</span>
+    </div>
 
-.footer-link:hover { color: var(--gold-light); }
-.footer-link:hover::after { width: 100%; }
+    <div class="event-info">
+      <h3>Razzmatazz</h3>
+      <p>Barcelona, Spain · Doors 22:00</p>
+    </div>
 
-.footer-bottom {
-  max-width: var(--max-w);
-  margin: 0 auto;
-  text-align: center;
-  font-family: var(--font-sans);
-  font-size: 10px;
-  font-weight: 300;
-  letter-spacing: 0.08em;
-  color: var(--muted);
-}
-  
-    /* ── CURSOR ── */
-    const cur  = document.getElementById('cur');
-    const ring = document.getElementById('cur-ring');
-    let mx = window.innerWidth / 2, my = window.innerHeight / 2;
-    let rx = mx, ry = my;
- 
-    document.addEventListener('mousemove', e => {
-      mx = e.clientX; my = e.clientY;
-      cur.style.left = mx + 'px';
-      cur.style.top  = my + 'px';
-    });
-    document.addEventListener('mousedown', () => document.body.classList.add('clicking'));
-    document.addEventListener('mouseup',   () => document.body.classList.remove('clicking'));
- 
-    document.querySelectorAll('a, button, .ticket, .btn, .logo, .social a, .menu a, .footer-nav a').forEach(el => {
-      el.addEventListener('mouseenter', () => document.body.classList.add('hovered'));
-      el.addEventListener('mouseleave', () => document.body.classList.remove('hovered'));
-    });
- 
-    (function tick() {
-      rx += (mx - rx) * .11;
-      ry += (my - ry) * .11;
-      ring.style.left = rx + 'px';
-      ring.style.top  = ry + 'px';
-      requestAnimationFrame(tick);
-    })();
- 
-    /* ── SCROLL: header + progress ── */
-    const hdr  = document.getElementById('hdr');
-    const prog = document.getElementById('prog');
- 
-    window.addEventListener('scroll', () => {
-      const s   = window.scrollY;
-      const max = document.body.scrollHeight - window.innerHeight;
-      hdr.classList.toggle('stuck', s > 60);
-      prog.style.width = (max > 0 ? (s / max * 100) : 0) + '%';
-    }, { passive: true });
- 
-    /* ── HERO ENTRANCE ── */
-    window.addEventListener('DOMContentLoaded', () => {
-      setTimeout(() => document.getElementById('hbg').classList.add('in'),    100);
-      setTimeout(() => document.getElementById('htag').classList.add('in'),   300);
-      setTimeout(() => document.getElementById('htitle').classList.add('in'), 480);
-      setTimeout(() => document.getElementById('hsub').classList.add('in'),   660);
-      setTimeout(() => document.getElementById('hbtns').classList.add('in'),  820);
-    });
- 
-    /* ── SCROLL REVEAL ── */
-    const obs = new IntersectionObserver(entries => {
-      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
-    }, { threshold: .1 });
- 
-    document.querySelectorAll('.r').forEach(el => obs.observe(el));
-  </script>
- 
+    <span class="sold">
+      Sold Out
+    </span>
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- Media -->
+
+  <section class="wrap">
+
+```
+<div class="section">
+
+  <div class="eyebrow r">
+    Media
+  </div>
+
+  <div class="video r">
+
+    <iframe
+      src="https://www.youtube.com/embed/Y04K9-z7pxk"
+      title="YouTube Video"
+      allowfullscreen>
+    </iframe>
+
+  </div>
+
+  <div class="video-meta r">
+
+    <span>Brahms Scherzo arr. for Viola and Piano</span>
+
+    <span>2025</span>
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- Contact -->
+
+  <section class="wrap">
+
+```
+<div class="section">
+
+  <div class="eyebrow r">
+    Contact
+  </div>
+
+  <div class="contact-grid">
+
+    <div class="contact-copy r">
+
+      <h2>
+        Management
+      </h2>
+
+      <div class="contact-item">
+
+        <div class="role">
+          Management & Concert Requests
+        </div>
+
+        <a href="mailto:florianpeelman@gmail.com">
+          florianpeelman@gmail.com
+        </a>
+
+      </div>
+
+      <div class="contact-item">
+
+        <div class="role">
+          Teaching & Masterclasses
+        </div>
+
+        <a href="mailto:florianpeelman@gmail.com">
+          florianpeelman@gmail.com
+        </a>
+
+      </div>
+
+    </div>
+
+    <form class="contact-form r">
+
+      <div class="form-row">
+        <label for="f-name">Name</label>
+        <input id="f-name" type="text">
+      </div>
+
+      <div class="form-row">
+        <label for="f-email">Email</label>
+        <input id="f-email" type="email">
+      </div>
+
+      <div class="form-row">
+        <label for="f-msg">Message</label>
+        <textarea id="f-msg"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-ghost">
+        Send Message →
+      </button>
+
+    </form>
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- Footer -->
+
+  <footer class="footer">
+
+```
+<div class="footer-inner">
+
+  <div>
+
+    <div class="footer-logo">
+      FLORIAN PEELMAN
+    </div>
+
+    <div class="footer-role">
+      Violist · Orchestra · Chamber Music · Teaching
+    </div>
+
+  </div>
+
+  <div class="footer-quote">
+    "Music expresses what words cannot."
+  </div>
+
+  <div class="footer-right">
+
+    <a href="bio.html" class="footer-link">Bio</a>
+
+    <a href="calendar.html" class="footer-link">Calendar</a>
+
+    <a href="media.html" class="footer-link">Media</a>
+
+    <a href="contact.html" class="footer-link">Contact</a>
+
+  </div>
+
+</div>
+
+<div class="footer-bottom">
+  © 2025 Florian Peelman. All Rights Reserved.
+</div>
+```
+
+  </footer>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
